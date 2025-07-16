@@ -1,0 +1,30 @@
+{
+"@path": "res://addons/dialogic/Resources/character.gd",
+"@subpath": NodePath(""),
+&"_translation_id": "",
+&"color": Color(1, 1, 1, 1),
+&"custom_info": {
+"sound_mood_default": "",
+"sound_moods": {},
+"style": ""
+},
+&"default_portrait": "What",
+&"description": "",
+&"display_name": "test_char",
+&"mirror": false,
+&"nicknames": ["testywesty"],
+&"offset": Vector2(0, 0),
+&"portraits": {
+"What": {
+"export_overrides": {
+"image": "\"res://icon.svg\""
+},
+"ignore_char_scale": true,
+"mirror": false,
+"offset": Vector2(0, 0),
+"scale": 0.6,
+"scene": ""
+}
+},
+&"scale": 1.0
+}

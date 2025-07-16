@@ -1,4 +1,6 @@
-[gd_scene format=3 uid="uid://dvud08bi0prmb"]
+[gd_scene load_steps=2 format=3 uid="uid://dvud08bi0prmb"]
+
+[ext_resource type="Script" uid="uid://jcs3hoqkxaag" path="res://scenes/initial_input_checker.gd" id="1_o5qli"]
 
 [node name="Control" type="Control"]
 layout_mode = 3
@@ -13,3 +15,9 @@ layout_mode = 0
 offset_right = 40.0
 offset_bottom = 23.0
 text = "OooooHoooHHHAhhh I'm going crazy! I'm crazy now!"
+
+[node name="InitialInputChecker" type="Control" parent="."]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_o5qli")
