@@ -1,7 +1,7 @@
 # this shit is awesome
 join test_char left [animation="Slide In Right" length="2.0" wait="true"]
 label post-join
-test_char: MEOWMEOMWOEMOWMEOMWOEMWMEOWE hello!
+test_char: MEOWMEOMWOEMOWMEOMWOEMWMEOWE hello! Lighthouse
 - Awesome?
 	test_char: Haha i know ! \:) [b]meow[/b]\
 [shake rate=20.0 level=5 connected=1]asdahjsdklajshldkjhlkj[/shake]
