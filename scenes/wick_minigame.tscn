@@ -1,0 +1,60 @@
+[gd_scene load_steps=3 format=3 uid="uid://bg4c5lnw6wrfk"]
+
+[ext_resource type="Script" uid="uid://bxjgp4g10m4us" path="res://scenes/minigames/wick_trimming/wick_minigame.gd" id="1_wboxg"]
+[ext_resource type="Texture2D" uid="uid://djhchohwyob4q" path="res://assets/textures/spr_temp_arrow.png" id="2_xwr8a"]
+
+[node name="WickMinigame" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Minigame" type="Control" parent="."]
+anchors_preset = 0
+offset_left = 231.0
+offset_top = 169.0
+offset_right = 271.0
+offset_bottom = 209.0
+script = ExtResource("1_wboxg")
+
+[node name="MainBar" type="ColorRect" parent="Minigame"]
+layout_mode = 0
+offset_left = 16.0
+offset_right = 21.0
+offset_bottom = 281.0
+
+[node name="Arrow" type="TextureRect" parent="Minigame"]
+texture_filter = 1
+layout_mode = 0
+offset_left = 41.0
+offset_top = -27.075
+offset_right = 94.0
+offset_bottom = 26.925
+pivot_offset = Vector2(0, 28)
+texture = ExtResource("2_xwr8a")
+expand_mode = 1
+
+[node name="GoalPos" type="ColorRect" parent="Minigame"]
+layout_mode = 0
+offset_left = 4.0
+offset_top = 57.0
+offset_right = 33.0
+offset_bottom = 65.0
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -301.0
+offset_right = 301.0
+offset_bottom = 40.0
+grow_horizontal = 2
+theme_override_font_sizes/normal_font_size = 46
+bbcode_enabled = true
+text = "Trim the wicks."
+fit_content = true
+horizontal_alignment = 1
+vertical_alignment = 1
