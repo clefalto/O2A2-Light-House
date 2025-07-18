@@ -1,0 +1,6 @@
+[style name="test_styles"]
+if {NumOil} > 0.0:
+	[shake rate={NumClicks} level=50 connected=1]{NumOil}[/shake]
+	[signal arg="OilDisplayed"]
+	set {NumClicks} += 10.0
+	jump oil/

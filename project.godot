@@ -25,12 +25,16 @@ directories/dch_directory={
 "test_char": "res://dialog/characters/test_char.dch"
 }
 directories/dtl_directory={
+"oil": "res://dialog_timelines/oil.dtl",
 "test": "res://dialog_timelines/test.dtl"
 }
 glossary/default_case_sensitive=true
 layout/style_list=["res://dialog/styles/test_styles.tres"]
 layout/default_style="res://dialog/styles/test_styles.tres"
-variables={}
+variables={
+"NumClicks": 10,
+"NumOil": 10
+}
 extensions_folder="res://addons/dialogic_additions"
 text/letter_speed=0.01
 text/initial_text_reveal_skippable=true
