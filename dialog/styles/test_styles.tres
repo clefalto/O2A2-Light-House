@@ -40,12 +40,13 @@ overrides = {
 script = ExtResource("1_ewcem")
 scene = ExtResource("5_rw3ny")
 overrides = {
-"box_color_custom": "Color(1, 1, 1, 1)",
-"box_color_use_global": "false",
-"box_panel": "\"res://dialog/panels/lh_textbox_panel.tres\"",
-"name_label_box_modulate": "Color(1, 1, 1, 1)",
-"name_label_box_panel": "\"res://dialog/panels/lh_textbox_name_label_panel.tres\"",
-"name_label_box_use_global_color": "false"
+"box_margin_bottom": "0.0",
+"box_panel": "\"vn_textbox_default_panel.tres\"",
+"box_size": "Vector2(1152, 648)",
+"name_label_alignment": "1",
+"next_indicator_enabled": "false",
+"next_indicator_show_on_questions": "false",
+"text_alignment": "1"
 }
 
 [sub_resource type="Resource" id="Resource_xiasp"]
@@ -72,7 +73,7 @@ overrides = {}
 
 [resource]
 script = ExtResource("10_wt7me")
-name = "lighthouse_style"
+name = "test_styles"
 layer_list = Array[String](["10", "11", "12", "13", "14", "15", "16", "17"])
 layer_info = {
 "": SubResource("Resource_3vhku"),
@@ -87,4 +88,4 @@ layer_info = {
 }
 base_overrides = {}
 layers = Array[ExtResource("1_ewcem")]([])
-metadata/_latest_layer = "13"
+metadata/_latest_layer = ""

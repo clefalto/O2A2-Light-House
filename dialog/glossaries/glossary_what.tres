@@ -4,7 +4,15 @@
 
 [resource]
 script = ExtResource("1_0qyka")
-entries = {}
+entries = {
+"Lighthouse": {
+"case_sensitive": false,
+"color": Color(0.460171, 0.159531, 0.996094, 1),
+"name": "Lighthouse",
+"text": "of LIight",
+"title": "House"
+}
+}
 enabled = true
 _translation_id = ""
 _translation_keys = {}

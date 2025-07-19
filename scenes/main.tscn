@@ -1,27 +1,23 @@
-[gd_scene load_steps=3 format=3 uid="uid://c7xyuqqwstc5h"]
+[gd_scene load_steps=2 format=3 uid="uid://dvud08bi0prmb"]
 
-[ext_resource type="Script" uid="uid://bcwx777g71mpo" path="res://scenes/main.gd" id="1_0wfyh"]
-[ext_resource type="PackedScene" uid="uid://cjmjhjs7cn15s" path="res://scenes/minigames/wick_trimming/wick_minigame.tscn" id="2_0wfyh"]
+[ext_resource type="Script" uid="uid://jcs3hoqkxaag" path="res://scripts/initial_input_checker.gd" id="1_o5qli"]
 
-[node name="Main" type="Control"]
+[node name="Control" type="Control"]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_0wfyh")
-scn_wick_minigame = ExtResource("2_0wfyh")
 
-[node name="BGBlack" type="ColorRect" parent="."]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_left = -202.0
-offset_top = -103.0
-offset_right = 200.0
-offset_bottom = 115.0
-grow_horizontal = 2
-grow_vertical = 2
-color = Color(0, 0, 0, 1)
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+text = "OooooHoooHHHAhhh I'm going crazy! I'm crazy now!"
+
+[node name="InitialInputChecker" type="Control" parent="."]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_o5qli")
