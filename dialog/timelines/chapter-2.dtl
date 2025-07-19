@@ -1,19 +1,37 @@
+[voice path="res://assets/voicelines/chap2/chap2-ln1.wav" volume="0.0"]
 the_keeper: There is no feeling quite as empty as waking up just in time to miss the setting sun.
+[voice path="res://assets/voicelines/chap2/chap2-ln2.wav" volume="0.0"]
 the_keeper: How—as the sun sets and everyone returns to their homes to end their day—I am just starting mine.
+[voice path="res://assets/voicelines/silence.wav" volume="0.0"]
 [i]There is a knocking on the door. [/i]
+[voice path="res://assets/voicelines/silence.wav" volume="0.0"]
 [i]Answer it. Answer it. Answer it.[/i]
+[voice path="res://assets/voicelines/chap2/chap2-ln5.wav" volume="0.0"]
 the_keeper: Supplies have come at last!
+[voice path="res://assets/voicelines/chap2/chap2-ln6.wav" volume="0.0"]
 the_keeper: But that can’t be right. Deliveries are usually in the…
+[voice path="res://assets/voicelines/silence.wav" volume="0.0"]
 [i]I open the door, and the cold night gusts into my quarters.[/i]
 # vfx here?
 # the following line should perhaps be broken into multiple it's a little long?
-[i]I shield my eyes from the wind, and when I open them, there is not a soul to be seen. Was there anyone to begin with? I close the door.[/i]
+[voice path="res://assets/voicelines/silence.wav" volume="0.0"]
+[i]I shield my eyes from the wind, and when I open them, there is not a soul to be seen. Was there anyone to begin with?[/i]
+[voice path="res://assets/voicelines/silence.wav" volume="0.0"]
+[i]I close the door.[/i]
+[voice path="res://assets/voicelines/chap2/chap2-ln9.wav" volume="0.0"]
 the_keeper: The rare opportunity to be with thoughts other than mine own—gone. Who knows how long it will be until I see the provisioners again?
+[voice path="res://assets/voicelines/chap2/chap2-ln10.wav" volume="0.0"]
 the_keeper: The last I saw them must have been…a couple of months past? I recall my soul lighting up like the beacon I’ve been tasked to care for.
+[voice path="res://assets/voicelines/chap2/chap2-ln11.wav" volume="0.0"]
 the_keeper: Alas, any such happiness in this stone prison is fleeting.
+[voice path="res://assets/voicelines/chap2/chap2-ln12.wav" volume="0.0"]
 the_keeper: But was it months, or weeks? Days or years? My sentence here has led to the slow deterioration of my mind.
+[voice path="res://assets/voicelines/chap2/chap2-ln13.wav" volume="0.0"]
 the_keeper: I’ve had but minor errors so far. Clothing left hanging to dry during raging storms, rations forgotten outside, and the like.
+[voice path="res://assets/voicelines/chap2/chap2-ln14.wav" volume="0.0"]
 the_keeper: A brief week of starvation led to my most recent indulgence - fishing.
+[voice path="res://assets/voicelines/chap2/chap2-ln15.wav" volume="0.0"]
 the_keeper: I daresay I’m quite good at it. Had I a comrade, I would’ve gladly shared my prey. Sadly, no such help has arrived.
+[voice path="res://assets/voicelines/chap2/chap2-ln16.wav" volume="0.0"]
 the_keeper: But it matters not. Nothing good will come of fretting over that now.
 # me when i am mini and i game
