@@ -8,15 +8,15 @@ the_keeper: I’m settling rather well into the rest of it, though. The maintena
 the_keeper: So much effort goes into keeping this beacon lit and burning bright. I received word that they are looking for a second, and I would welcome the help.
 [voice path="res://assets/voicelines/chap1/Chap1-ln5.wav" volume="0.0"]
 the_keeper: Not all is so smooth, though—resting through the day was once a struggle.
-[music path="res://assets/voicelines/chap1/Chap1-ln6.wav" fade="0.0" volume="0.0"]
+[voice path="res://assets/voicelines/chap1/Chap1-ln6.wav" volume="0.0"]
 the_keeper: And a month of exhaustion was soon followed by two months of decent slumber.
 [voice path="res://assets/voicelines/chap1/Chap1-ln7.wav" volume="0.0"]
 the_keeper: But now, for reasons unbeknownst to me, sleep has become elusive once again.
-[voice path="Chap1-ln8.wav" volume="0.0"]
+[voice path="res://assets/voicelines/chap1/Chap1-ln8.wav" volume="0.0"]
 the_keeper: [i][shake rate=30.0 level=10 connected=1]*Cough cough*[/shake][/i]
 [voice path="res://assets/voicelines/chap1/Chap1-ln9.wav" volume="0.0"]
 the_keeper: And this cough. It waxes and wanes, but I pray it’s nothing more than a mark of the Winter cold.
-[music path="res://assets/voicelines/chap1/Chap1-ln10.wav" fade="0.0" volume="0.0"]
+[voice path="res://assets/voicelines/chap1/Chap1-ln10.wav" volume="0.0"]
 the_keeper: Alas, I can’t complain.
 [voice path="res://assets/voicelines/chap1/Chap1-ln11.wav" volume="0.0"]
 the_keeper: The excitement of a new life in a new township, so close to the water. And to find a watchman's job with such ease.
@@ -24,11 +24,13 @@ the_keeper: The excitement of a new life in a new township, so close to the wate
 the_keeper: To be away from home, left to mine own devices. Self-governance at last.
 [voice path="res://assets/voicelines/chap1/Chap1-ln13.wav" volume="0.0"]
 the_keeper: Lord of myself, and this stone tower.
+[voice path="res://assets/voicelines/silence.wav" volume="0.0"]
 [i]The light from the platform above seems to flicker and wane slightly.[/i]
 [voice path="res://assets/voicelines/chap1/Chap1-ln15.wav" volume="0.0"]
 the_keeper: Though it does get quiet, despite the crashing of the waves, and the calling of the sailors.
 [voice path="res://assets/voicelines/chap1/Chap1-ln16.wav" volume="0.0"]
 the_keeper: Mayhaps the solitude is a good thing after all? To get away for a bit.
+[voice path="res://assets/voicelines/silence.wav" volume="0.0"]
 [i]A slight smell of soot and smoke fills the air.[/i]
 [voice path="res://assets/voicelines/chap1/Chap1-ln18.wav" volume="0.0"]
 the_keeper: I best be getting upstairs now.
