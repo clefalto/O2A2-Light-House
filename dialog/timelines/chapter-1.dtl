@@ -1,4 +1,4 @@
-[voice path="res://assets/voicelines/chap1/Chap1-ln1.wav" volume="0.0"]
+[voice path="Chap1-ln1.wav" volume="0.0"]
 the_keeper: It's an odd feeling to wake up so close to sunset.
 [voice path="res://assets/voicelines/chap1/Chap1-ln2.wav" volume="0.0"]
 the_keeper: [i][shake rate=20.0 level=5 connected=1]*Cough cough*[/shake][/i]

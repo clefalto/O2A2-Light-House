@@ -1,4 +1,4 @@
-extends ColorRect
+extends TextureRect
 
 var active: bool = false
 
@@ -21,7 +21,7 @@ func _process(delta: float):
 		rotation += angular_velocity * rotation_dir * delta
 		angular_velocity += angular_acceleration * delta
 		
-		color.a -= disappear_rate * delta
+		self_modulate.a -= disappear_rate * delta
 
 func start_falling():
 	active = true

@@ -6,12 +6,10 @@
 [ext_resource type="Texture2D" uid="uid://dcneakt604s0p" path="res://assets/textures/slice.png" id="4_00gtw"]
 
 [sub_resource type="Gradient" id="Gradient_pageb"]
-colors = PackedColorArray(0, 0, 0, 1, 0.69, 0.69, 0.69, 1)
 
-[sub_resource type="GradientTexture2D" id="GradientTexture2D_fgx4h"]
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_fgx4h"]
 gradient = SubResource("Gradient_pageb")
-width = 10
-fill_to = Vector2(0, 1)
+width = 100
 
 [node name="Minigame" type="Control"]
 layout_mode = 3
@@ -31,16 +29,12 @@ offset_right = 21.0
 offset_bottom = 281.0
 
 [node name="ThePartThatFallsOff" type="TextureRect" parent="."]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_left = 16.0
-offset_right = -14.0
-offset_bottom = 24.0
-grow_horizontal = 2
-grow_vertical = 2
-texture = SubResource("GradientTexture2D_fgx4h")
+layout_mode = 0
+offset_left = 26.0
+offset_right = 307.0
+offset_bottom = 10.0
+rotation = 1.5708
+texture = SubResource("GradientTexture1D_fgx4h")
 script = ExtResource("2_si3yd")
 
 [node name="BottomPart" type="ColorRect" parent="."]
