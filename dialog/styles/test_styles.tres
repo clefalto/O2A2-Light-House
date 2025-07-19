@@ -1,6 +1,7 @@
-[gd_resource type="Resource" script_class="DialogicStyle" load_steps=20 format=3 uid="uid://x1pbwae55dn5"]
+[gd_resource type="Resource" script_class="DialogicStyle" load_steps=21 format=3 uid="uid://x1pbwae55dn5"]
 
 [ext_resource type="Script" uid="uid://v524uwul1mp7" path="res://addons/dialogic/Resources/dialogic_style_layer.gd" id="1_ewcem"]
+[ext_resource type="PackedScene" uid="uid://cqpb3ie51rwl5" path="res://addons/dialogic/Modules/DefaultLayoutParts/Base_Default/default_layout_base.tscn" id="1_ohi1f"]
 [ext_resource type="PackedScene" uid="uid://c1k5m0w3r40xf" path="res://addons/dialogic/Modules/DefaultLayoutParts/Layer_FullBackground/full_background_layer.tscn" id="2_ohi1f"]
 [ext_resource type="PackedScene" uid="uid://cy1y14inwkplb" path="res://addons/dialogic/Modules/DefaultLayoutParts/Layer_VN_Portraits/vn_portrait_layer.tscn" id="3_wmin4"]
 [ext_resource type="PackedScene" uid="uid://cn674foxwedqu" path="res://addons/dialogic/Modules/DefaultLayoutParts/Layer_Input/full_advance_input_layer.tscn" id="4_dodea"]
@@ -13,6 +14,7 @@
 
 [sub_resource type="Resource" id="Resource_3vhku"]
 script = ExtResource("1_ewcem")
+scene = ExtResource("1_ohi1f")
 overrides = {
 "canvas_layer": "0.0",
 "follow_viewport": "true",
@@ -40,13 +42,12 @@ overrides = {
 script = ExtResource("1_ewcem")
 scene = ExtResource("5_rw3ny")
 overrides = {
-"box_margin_bottom": "0.0",
-"box_panel": "\"vn_textbox_default_panel.tres\"",
-"box_size": "Vector2(1152, 648)",
-"name_label_alignment": "1",
-"next_indicator_enabled": "false",
-"next_indicator_show_on_questions": "false",
-"text_alignment": "1"
+"box_color_custom": "Color(1, 1, 1, 1)",
+"box_color_use_global": "false",
+"box_panel": "\"res://dialog/panels/lh_textbox_panel.tres\"",
+"name_label_box_modulate": "Color(1, 1, 1, 1)",
+"name_label_box_panel": "\"res://dialog/panels/lh_textbox_name_label_panel.tres\"",
+"name_label_box_use_global_color": "false"
 }
 
 [sub_resource type="Resource" id="Resource_xiasp"]
@@ -73,7 +74,7 @@ overrides = {}
 
 [resource]
 script = ExtResource("10_wt7me")
-name = "test_styles"
+name = "lighthouse_style"
 layer_list = Array[String](["10", "11", "12", "13", "14", "15", "16", "17"])
 layer_info = {
 "": SubResource("Resource_3vhku"),
@@ -88,4 +89,4 @@ layer_info = {
 }
 base_overrides = {}
 layers = Array[ExtResource("1_ewcem")]([])
-metadata/_latest_layer = ""
+metadata/_latest_layer = "13"

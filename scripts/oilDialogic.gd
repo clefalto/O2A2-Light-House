@@ -2,9 +2,10 @@ extends Control
 
 @export var night: int = 1
 @export var howManyClicks: int = 10
-var currDialogue
+@export var currDialogue: bool = false
 
 func _ready() -> void:
+	$"../GPUParticles2D".amount_ratio = 0.01
 	if night == 1:
 		howManyClicks = 10
 	elif night == 2:
@@ -15,31 +16,17 @@ func _ready() -> void:
 		howManyClicks = 1000000000
 	if Dialogic.current_timeline != null:
 		return
-	currDialogue = Dialogic.start('oil')
-	get_node("/root/OilMinigame").add_child(currDialogue)
+	currDialogue = true
+	Dialogic.start('oil')
 	Dialogic.VAR.set_variable("NumOil", howManyClicks)
 	pass
 
-func _input(event: InputEvent):
-	pass
-	#if Dialogic.current_timeline != null:
-		##var oilCount = get_node("/root/Dialogic").get_variable("NumOil")
-		##oilCount-=1
-		#return
-	#
-	#if Input.is_action_just_pressed("dialogic_default_action"):
-		#print("wharg")
-		#currDialogue = Dialogic.start('oil')
-		#get_node("/root/OilMinigame").add_child(currDialogue)
-		## dialogueOil.get_child()
-		#
-		## get_viewport().set_input_as_handled()
-
-
 func _on_button_pressed() -> void:
-	if currDialogue != null:
+	print("?")
+	if currDialogue != false:
 		var oilCount = Dialogic.VAR.get_variable("NumOil")
 		print(oilCount)
 		oilCount -= 1
 		Dialogic.VAR.set_variable("NumOil", oilCount)
+		$"../GPUParticles2D".amount_ratio += 0.01
 	pass # Replace with function body.
