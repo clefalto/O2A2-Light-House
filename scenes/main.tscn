@@ -1,4 +1,4 @@
-[gd_scene load_steps=2 format=3 uid="uid://dvud08bi0prmb"]
+[gd_scene load_steps=2 format=3 uid="uid://c7xyuqqwstc5h"]
 
 [ext_resource type="Script" uid="uid://jcs3hoqkxaag" path="res://scenes/initial_input_checker.gd" id="1_o5qli"]
 
