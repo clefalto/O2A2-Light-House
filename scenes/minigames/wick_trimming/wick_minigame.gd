@@ -28,6 +28,19 @@ func _ready():
 	# pick a random spot for the target position
 	var loc = randf_range(top_extent + target_edge_margin, bottom_extent - target_edge_margin)
 	goal_pos.position.y = loc
+	
+	
+	
+	# adjust pos of things
+	# now that we know the goal pos position we can put The Part That Falls Off in the proper place
+	# (and also the bottom part)
+	$ThePartThatFallsOff.size.y = loc
+	$ThePartThatFallsOff.pivot_offset = $ThePartThatFallsOff.size / 2
+	$BottomPart.position.y = loc
+	$BottomPart.size.y = bottom_extent - loc
+	$ThePartThatFallsOff.bigger_total_height = $ThePartThatFallsOff.size.y + $BottomPart.size.y
+	
+	$SliceTexture.position.y = loc - ($SliceTexture.size.y/2)
 
 func _input(event: InputEvent) -> void:
 	if event.is_action_pressed("accept"):
@@ -62,8 +75,12 @@ func _process(delta: float):
 		
 		if is_within_goal_pos(arrow_pos_to_point_pos(arrow.global_position)):
 			goal_pos.color = Color.WHITE
+			$GoalPos/GoalPos2.color = Color.WHITE
+			$GoalPos/GoalPos3.color = Color.WHITE
 		else:
 			goal_pos.color = Color.DIM_GRAY
+			$GoalPos/GoalPos2.color = Color.DIM_GRAY
+			$GoalPos/GoalPos3.color = Color.DIM_GRAY
 		
 		adjust_shakiness()
 		
@@ -88,10 +105,15 @@ func _draw():
 	#draw_rect(forgiveness_rect, Color.BLUE, false)
 
 func check_completed():
-	if is_within_goal_pos(arrow_pos_to_point_pos(arrow.global_position)):
+	if active and is_within_goal_pos(arrow_pos_to_point_pos(arrow.global_position)):
+		print("completed! meow!")
 		stop_arrow()
 		completed.emit()
 		# prob wanna play a sound here too
+		$ThePartThatFallsOff.start_falling()
+		$SliceTexture.visible = true
+		var tw = get_tree().create_tween()
+		tw.tween_property($SliceTexture, "self_modulate", Color(1.0, 1.0, 1.0, 0.0), 0.2)
 	else:
 		# idk like play a sound or somethin
 		pass

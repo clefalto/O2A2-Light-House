@@ -30,7 +30,9 @@ directories/dtl_directory={
 glossary/default_case_sensitive=true
 layout/style_list=["res://dialog/styles/test_styles.tres"]
 layout/default_style="res://dialog/styles/test_styles.tres"
-variables={}
+variables={
+"Var": 0
+}
 extensions_folder="res://addons/dialogic_additions"
 text/letter_speed=0.01
 text/initial_text_reveal_skippable=true
