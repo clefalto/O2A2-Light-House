@@ -1,79 +1,81 @@
-[gd_scene load_steps=5 format=3 uid="uid://ny4ltj0il2oo"]
+[gd_scene load_steps=5 format=3 uid="uid://cjmjhjs7cn15s"]
 
-[ext_resource type="Script" uid="uid://bxjgp4g10m4us" path="res://scenes/minigames/wick_trimming/wick_minigame.gd" id="1_hg61t"]
-[ext_resource type="Script" uid="uid://4adaja8ghn3k" path="res://scenes/minigames/wick_trimming/falling_wick.gd" id="2_si3yd"]
-[ext_resource type="Texture2D" uid="uid://djhchohwyob4q" path="res://assets/textures/spr_temp_arrow.png" id="3_ky1x6"]
-[ext_resource type="Texture2D" uid="uid://dcneakt604s0p" path="res://assets/textures/slice.png" id="4_00gtw"]
+[ext_resource type="Script" uid="uid://c8yn16it7l70c" path="res://scenes/minigames/wick_trimming/wick_minigame_controller.gd" id="1_twuup"]
+[ext_resource type="PackedScene" uid="uid://ny4ltj0il2oo" path="res://scenes/minigames/wick_trimming/single_wickigame.tscn" id="2_hg61t"]
+[ext_resource type="Script" uid="uid://82lhhb4evv16" path="res://scenes/shakeable_camera/shakeable_camera.gd" id="3_si3yd"]
 
-[node name="Minigame" type="Control"]
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_xwr8a"]
+noise_type = 3
+
+[node name="WickMinigame" type="Control" node_paths=PackedStringArray("minigames")]
+process_mode = 3
 layout_mode = 3
-anchors_preset = 0
-offset_left = 231.0
-offset_top = 169.0
-offset_right = 271.0
-offset_bottom = 209.0
-script = ExtResource("1_hg61t")
-forgiveness = 10
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_twuup")
+minigames = [NodePath("Minigame"), NodePath("Minigame2"), NodePath("Minigame3")]
 
-[node name="MainBar" type="ColorRect" parent="."]
-visible = false
-layout_mode = 0
-offset_left = 16.0
-offset_right = 21.0
-offset_bottom = 281.0
+[node name="BG" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -270.0
+offset_top = -161.0
+offset_right = 239.0
+offset_bottom = 217.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
 
-[node name="ThePartThatFallsOff" type="ColorRect" parent="."]
-layout_mode = 0
-offset_left = 16.0
-offset_right = 26.0
-offset_bottom = 40.0
-pivot_offset = Vector2(0, 19)
-script = ExtResource("2_si3yd")
+[node name="Minigame" parent="." instance=ExtResource("2_hg61t")]
+offset_left = 249.0
+offset_top = 200.0
+offset_right = 289.0
+offset_bottom = 240.0
 
-[node name="BottomPart" type="ColorRect" parent="."]
-layout_mode = 0
-offset_left = 16.0
-offset_right = 26.0
-offset_bottom = 40.0
+[node name="Minigame2" parent="." instance=ExtResource("2_hg61t")]
+offset_left = 561.0
+offset_top = 201.0
+offset_right = 601.0
+offset_bottom = 241.0
 
-[node name="Arrow" type="TextureRect" parent="."]
-texture_filter = 1
-layout_mode = 0
-offset_left = 41.0
-offset_top = -27.075
-offset_right = 94.0
-offset_bottom = 26.925
-pivot_offset = Vector2(0, 28)
-texture = ExtResource("3_ky1x6")
-expand_mode = 1
+[node name="Minigame3" parent="." instance=ExtResource("2_hg61t")]
+offset_left = 868.0
+offset_top = 201.0
+offset_right = 908.0
+offset_bottom = 241.0
 
-[node name="GoalPos" type="ColorRect" parent="."]
-layout_mode = 0
-offset_left = 4.0
-offset_top = 60.0
-offset_right = 38.0
-offset_bottom = 62.0
-
-[node name="GoalPos3" type="ColorRect" parent="GoalPos"]
-layout_mode = 0
-offset_left = 34.0
-offset_top = -4.0
-offset_right = 36.0
-offset_bottom = 6.0
-
-[node name="GoalPos2" type="ColorRect" parent="GoalPos"]
-layout_mode = 0
-offset_left = -2.0
-offset_top = -4.0
-offset_bottom = 6.0
-
-[node name="SliceTexture" type="TextureRect" parent="."]
-visible = false
-texture_filter = 1
-layout_mode = 0
-offset_left = -27.0
-offset_top = 8.0
-offset_right = 73.0
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -311.0
+offset_top = 44.0
+offset_right = 291.0
 offset_bottom = 108.0
-pivot_offset = Vector2(48, 52)
-texture = ExtResource("4_00gtw")
+grow_horizontal = 2
+theme_override_font_sizes/normal_font_size = 46
+bbcode_enabled = true
+text = "Trim the wicks."
+fit_content = true
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ShakeableCamera" type="Camera2D" parent="."]
+position = Vector2(576, 322)
+script = ExtResource("3_si3yd")
+decay = 2.0
+noise = SubResource("FastNoiseLite_xwr8a")
+
+[node name="FailOverlay" type="ColorRect" parent="."]
+layout_mode = 0
+offset_left = -271.0
+offset_top = -157.0
+offset_right = 1393.0
+offset_bottom = 863.0
+color = Color(0, 0, 0, 0)
