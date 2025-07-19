@@ -1,4 +1,4 @@
-[style name="test_styles"]
+[style name="oil"]
 if {NumOil} > 0.0:
 	[shake rate={NumClicks} level=50 connected=1]{NumOil}[/shake]
 	[signal arg="OilDisplayed"]

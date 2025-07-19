@@ -34,7 +34,7 @@ directories/dtl_directory={
 "test": "res://dialog/timelines/test.dtl"
 }
 glossary/default_case_sensitive=true
-layout/style_list=["res://dialog/styles/test_styles.tres"]
+layout/style_list=["res://dialog/styles/test_styles.tres", "res://dialog/styles/oil.tres"]
 layout/default_style="res://dialog/styles/test_styles.tres"
 variables={
 "NumClicks": 10,
