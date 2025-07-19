@@ -1,6 +1,6 @@
 extends Control
 
-@export var night: int = 1
+@export var night: int = 4
 @export var howManyClicks: int = 10
 @export var currDialogue: bool = false
 
