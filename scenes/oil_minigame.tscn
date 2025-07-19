@@ -1,6 +1,5 @@
-[gd_scene load_steps=3 format=3 uid="uid://cbrykgcdpf8jx"]
+[gd_scene load_steps=2 format=3 uid="uid://cbrykgcdpf8jx"]
 
-[ext_resource type="Script" uid="uid://bcwq68juusfhw" path="res://scripts/filloil.gd" id="1_bwm1t"]
 [ext_resource type="Script" uid="uid://dklfq3duq7y4f" path="res://scripts/oilDialogic.gd" id="2_jdlr0"]
 
 [node name="OilMinigame" type="CanvasLayer"]
@@ -20,15 +19,6 @@ grow_horizontal = 2
 grow_vertical = 2
 text = "Fill Oil"
 
-[node name="TextEdit" type="TextEdit" parent="."]
-visible = false
-offset_left = 257.0
-offset_right = 792.0
-offset_bottom = 140.0
-text = "10"
-editable = false
-script = ExtResource("1_bwm1t")
-
 [node name="Control" type="Control" parent="."]
 layout_mode = 3
 anchors_preset = 0
@@ -36,5 +26,4 @@ offset_right = 40.0
 offset_bottom = 40.0
 script = ExtResource("2_jdlr0")
 
-[connection signal="pressed" from="Button" to="TextEdit" method="_on_button_pressed"]
 [connection signal="pressed" from="Button" to="Control" method="_on_button_pressed"]
