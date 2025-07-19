@@ -1,18 +1,37 @@
+[voice path="res://assets/voicelines/silence.wav" volume="0.0"]
 [i]I awaken to the sound of crickets, singing away to the dusk-filled sky.[/i]
+[voice path="res://assets/voicelines/chap4/Chap4-ln2.wav" volume="0.0"]
 the_keeper: Shit.
+[voice path="res://assets/voicelines/chap4/Chap4-ln3.wav" volume="0.0"]
 the_keeper: Shit. Shit. Shit.
+[voice path="res://assets/voicelines/chap4/Chap4-ln4.wav" volume="0.0"]
 the_keeper: Damn my blood to hell and back.
+[voice path="res://assets/voicelines/silence.wav" volume="0.0"]
 [i]I rush up the stairs, tripping slightly as I reach the lantern room.[/i]
+# oil minigame here only right??
+[voice path="res://assets/voicelines/silence.wav" volume="0.0"]
 the_keeper: ...
+[voice path="res://assets/voicelines/chap4/Chap4-ln8.wav" volume="0.0"]
 [i]The world lights up around me.[/i]
+[voice path="res://assets/voicelines/chap4/Chap4-ln9.wav" volume="0.0"]
 [i]The flames crawl up and down my being, eager to feed.[/i]
+[voice path="res://assets/voicelines/chap4/Chap4-ln10.wav" volume="0.0"]
 the_keeper: And yet I barely realize it as I land in my living quarters.
+[voice path="res://assets/voicelines/chap4/Chap4-ln11.wav" volume="0.0"]
 the_keeper: It feels so warm and inviting.
+[voice path="res://assets/voicelines/chap4/Chap4-ln12.wav" volume="0.0"]
 the_keeper: Yet I am so tired, and cold.
+[voice path="res://assets/voicelines/chap4/Chap4-ln13.wav" volume="0.0"]
 [i]I stare up into the ruthless darkness of the tower.[/i]
+[voice path="res://assets/voicelines/chap4/Chap4-ln14.wav" volume="0.0"]
 [i]The rest of the world fades away as the light consumes me.[/i]
+[voice path="res://assets/voicelines/chap4/Chap4-ln15.wav" volume="0.0"]
 [i]I want so badly to go back. To where I am no longer known, no longer welcome.[/i]
+[voice path="res://assets/voicelines/chap4/Chap4-ln16.wav" volume="0.0"]
 [i]But it's too late. Always has been, always will be.[/i]
+[voice path="res://assets/voicelines/chap4/Chap4-ln17.wav" volume="0.0"]
 [i]I lie down to rest for the last time.[/i]
+[voice path="res://assets/voicelines/silence.wav" volume="0.0"]
 the_keeper: ...
+[voice path="res://assets/voicelines/chap4/Chap4-ln19.wav" volume="0.0"]
 the_keeper: Goodnight.
