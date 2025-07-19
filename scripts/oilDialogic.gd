@@ -37,9 +37,7 @@ func _input(event: InputEvent):
 
 
 func _on_button_pressed() -> void:
-	print("wha")
 	if currDialogue != null:
-		print("hmm")
 		var oilCount = Dialogic.VAR.get_variable("NumOil")
 		print(oilCount)
 		oilCount -= 1
