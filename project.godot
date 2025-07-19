@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="Light2House2"
-run/main_scene="uid://dvud08bi0prmb"
+run/main_scene="uid://c7xyuqqwstc5h"
 config/features=PackedStringArray("4.4", "Forward Plus")
 config/icon="res://icon.svg"
 
@@ -22,10 +22,15 @@ Dialogic="*res://addons/dialogic/Core/DialogicGameHandler.gd"
 [dialogic]
 
 directories/dch_directory={
-"test_char": "res://dialog/characters/test_char.dch"
+"test_char": "res://dialog/characters/test_char.dch",
+"the_keeper": "res://dialog/timelines/the_keeper.dch"
 }
 directories/dtl_directory={
-"test": "res://dialog_timelines/test.dtl"
+"chapter-1": "res://dialog/timelines/chapter-1.dtl",
+"chapter-2": "res://dialog/timelines/chapter-2.dtl",
+"chapter-3": "res://dialog/timelines/chapter-3.dtl",
+"chapter-4": "res://dialog/timelines/chapter-4.dtl",
+"test": "res://dialog/timelines/test.dtl"
 }
 glossary/default_case_sensitive=true
 layout/style_list=["res://dialog/styles/test_styles.tres"]

@@ -23,6 +23,7 @@ var arrow_move_dir: int = 1
 var shakiness: float = 0.0
 
 signal completed
+signal did_it_badly
 
 func _ready():
 	# pick a random spot for the target position
@@ -41,6 +42,10 @@ func _ready():
 	$ThePartThatFallsOff.bigger_total_height = $ThePartThatFallsOff.size.y + $BottomPart.size.y
 	
 	$SliceTexture.position.y = loc - ($SliceTexture.size.y/2)
+	
+	goal_pos.color = Color.DIM_GRAY
+	$GoalPos/GoalPos2.color = Color.DIM_GRAY
+	$GoalPos/GoalPos3.color = Color.DIM_GRAY
 
 func _input(event: InputEvent) -> void:
 	if event.is_action_pressed("accept"):
@@ -53,8 +58,8 @@ func disable():
 	active = false
 
 func _process(delta: float):
-	queue_redraw()
 	if active:
+		delta = delta * get_parent().mg_time_scale
 		#var t = Time.get_ticks_msec() / 1000.0
 		#would_be_arrow_position = lerp(top_extent, bottom_extent, remap(sin(arrow_move_speed*t), -1.0, 1.0, 0.0, 1.0))
 		#set_arrow_point_position(would_be_arrow_position)
@@ -114,9 +119,9 @@ func check_completed():
 		$SliceTexture.visible = true
 		var tw = get_tree().create_tween()
 		tw.tween_property($SliceTexture, "self_modulate", Color(1.0, 1.0, 1.0, 0.0), 0.2)
-	else:
+	elif active:
 		# idk like play a sound or somethin
-		pass
+		did_it_badly.emit()
 
 func stop_arrow():
 	active = false
