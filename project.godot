@@ -30,6 +30,7 @@ directories/dtl_directory={
 "chapter-2": "res://dialog/timelines/chapter-2.dtl",
 "chapter-3": "res://dialog/timelines/chapter-3.dtl",
 "chapter-4": "res://dialog/timelines/chapter-4.dtl",
+"finale": "res://dialog/timelines/finale.dtl",
 "oil": "res://dialog/timelines/oil.dtl",
 "test": "res://dialog/timelines/test.dtl"
 }

@@ -4,6 +4,8 @@ extends Control
 @export var howManyClicks: int = 10
 @export var currDialogue: bool = false
 
+signal finished
+
 func _ready() -> void:
 	$"../GPUParticles2D".amount_ratio = 0.01
 	if night == 1:
@@ -28,4 +30,10 @@ func _on_button_pressed() -> void:
 		oilCount -= 1
 		Dialogic.VAR.set_variable("NumOil", oilCount)
 		$"../GPUParticles2D".amount_ratio += 0.02
+		if oilCount <= 0:
+			finished.emit()
+			get_parent().queue_free()
+		if night == 4 && oilCount < (1000000000-20):
+			finished.emit()
+			get_parent().queue_free()
 	pass # Replace with function body.

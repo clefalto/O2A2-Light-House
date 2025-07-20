@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://cjmjhjs7cn15s"]
 
-[ext_resource type="Script" uid="uid://c8yn16it7l70c" path="res://scenes/minigames/wick_trimming/wick_minigame_controller.gd" id="1_twuup"]
+[ext_resource type="Script" path="res://scenes/minigames/wick_trimming/wick_minigame_controller.gd" id="1_twuup"]
 [ext_resource type="PackedScene" uid="uid://ny4ltj0il2oo" path="res://scenes/minigames/wick_trimming/single_wickigame.tscn" id="2_hg61t"]
 [ext_resource type="Script" uid="uid://82lhhb4evv16" path="res://scenes/shakeable_camera/shakeable_camera.gd" id="3_si3yd"]
 
