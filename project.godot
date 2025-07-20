@@ -30,12 +30,15 @@ directories/dtl_directory={
 "chapter-2": "res://dialog/timelines/chapter-2.dtl",
 "chapter-3": "res://dialog/timelines/chapter-3.dtl",
 "chapter-4": "res://dialog/timelines/chapter-4.dtl",
-"test": "res://dialog/timelines/test.dtl"
+"test": "res://dialog/timelines/test.dtl",
+"timelines/oil": "res://dialog/timelines/oil.dtl"
 }
 glossary/default_case_sensitive=true
-layout/style_list=["res://dialog/styles/lh_style.tres", "res://dialog/styles/REAL_style.tres"]
+layout/style_list=["res://dialog/styles/test_styles.tres", "res://dialog/styles/oil.tres"]
 layout/default_style="res://dialog/styles/test_styles.tres"
 variables={
+"NumClicks": 0,
+"NumOil": 0,
 "Var": 0
 }
 extensions_folder="res://addons/dialogic_additions"
