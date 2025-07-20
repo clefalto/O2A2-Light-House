@@ -22,7 +22,6 @@ func _ready() -> void:
 	pass
 
 func _on_button_pressed() -> void:
-	print("?")
 	if currDialogue != false:
 		var oilCount = Dialogic.VAR.get_variable("NumOil")
 		print(oilCount)
