@@ -14,6 +14,7 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_0wfyh")
 scn_wick_minigame = ExtResource("2_0wfyh")
+scn_oil_minigame = ExtResource("3_sugp2")
 
 [node name="BGWhite" type="ColorRect" parent="."]
 layout_mode = 1
