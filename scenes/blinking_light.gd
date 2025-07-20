@@ -12,3 +12,6 @@ func _on_dialogic_signal(argument:String):
 		$AnimationPlayer.play("fadeToNormal")
 	elif argument == "blinking":
 		$AnimationPlayer.play("blinking")
+
+func do_light_up_thing():
+	$AnimationPlayer.play("light_up_disappear")

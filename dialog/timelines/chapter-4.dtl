@@ -1,5 +1,4 @@
 [style name="REAL_style"]
-[signal arg="screenNorm"]
 [voice path="res://assets/voicelines/silence.wav" volume="0.0"]
 [i]I awaken to the sound of crickets, singing away to the dusk-filled sky.[/i]
 [voice path="res://assets/voicelines/chap4/Chap4-ln2.wav" volume="0.0"]
@@ -8,7 +7,6 @@ the_keeper: Shit.
 the_keeper: Shit. Shit. Shit.
 [voice path="res://assets/voicelines/chap4/Chap4-ln4.wav" volume="0.0"]
 the_keeper: Damn my blood to hell and back.
-[signal arg="screenBlack"]
 [voice path="res://assets/voicelines/silence.wav" volume="0.0"]
 [i]I rush up the stairs, tripping slightly as I reach the lantern room.[/i]
 # oil minigame here only right??
