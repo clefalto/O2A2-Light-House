@@ -1,0 +1,50 @@
+[gd_scene load_steps=5 format=3 uid="uid://cbrykgcdpf8jx"]
+
+[ext_resource type="Script" uid="uid://dklfq3duq7y4f" path="res://scripts/oilDialogic.gd" id="2_jdlr0"]
+
+[sub_resource type="Gradient" id="Gradient_jdlr0"]
+colors = PackedColorArray(1, 1, 1, 1, 1, 0.607843, 0.0156863, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_b58rq"]
+gradient = SubResource("Gradient_jdlr0")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_bwm1t"]
+particle_flag_disable_z = true
+emission_shape_scale = Vector3(5, 10, 1)
+emission_shape = 3
+emission_box_extents = Vector3(120, 100, 1)
+gravity = Vector3(0, 98, 0)
+color_ramp = SubResource("GradientTexture1D_b58rq")
+anim_offset_min = 0.8506
+anim_offset_max = 0.8506
+
+[node name="OilMinigame" type="CanvasLayer"]
+
+[node name="Button" type="Button" parent="."]
+z_as_relative = false
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -57.0
+offset_top = -38.5
+offset_right = 57.0
+offset_bottom = 38.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "Fill Oil"
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("2_jdlr0")
+
+[node name="GPUParticles2D" type="GPUParticles2D" parent="."]
+position = Vector2(574, 0)
+amount = 8000
+process_material = SubResource("ParticleProcessMaterial_bwm1t")
+
+[connection signal="pressed" from="Button" to="Control" method="_on_button_pressed"]
