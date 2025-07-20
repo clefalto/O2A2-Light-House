@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://cbrykgcdpf8jx"]
 
-[ext_resource type="Script" uid="uid://dklfq3duq7y4f" path="res://scripts/oilDialogic.gd" id="2_jdlr0"]
+[ext_resource type="Script" uid="uid://rapojctu8qqt" path="res://scripts/oilDialogic.gd" id="2_jdlr0"]
 
 [sub_resource type="Gradient" id="Gradient_jdlr0"]
 colors = PackedColorArray(1, 1, 1, 1, 1, 0.607843, 0.0156863, 1)

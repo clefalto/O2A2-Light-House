@@ -1,4 +1,4 @@
-[gd_resource type="Resource" script_class="DialogicStyle" load_steps=20 format=3 uid="uid://cycdksqd5mliu"]
+[gd_resource type="Resource" script_class="DialogicStyle" load_steps=20 format=3 uid="uid://cij7affsm2vec"]
 
 [ext_resource type="Script" uid="uid://v524uwul1mp7" path="res://addons/dialogic/Resources/dialogic_style_layer.gd" id="1_qxos5"]
 [ext_resource type="Script" uid="uid://xigf3tsusf0y" path="res://addons/dialogic/Resources/dialogic_style.gd" id="2_dqyr0"]
@@ -44,7 +44,6 @@ overrides = {
 "autoadvance_progressbar": "false",
 "box_color_use_global": "false",
 "box_margin_bottom": "0.0",
-"box_panel": "\"res://dialog/panels/lh_textbox_panel.tres\"",
 "box_size": "Vector2(1152, 648)",
 "name_label_box_modulate": "Color(1, 1, 1, 1)",
 "name_label_box_panel": "\"res://dialog/panels/lh_textbox_name_label_panel.tres\"",

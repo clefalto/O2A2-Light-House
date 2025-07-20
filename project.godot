@@ -37,6 +37,8 @@ glossary/default_case_sensitive=true
 layout/style_list=["res://dialog/styles/test_styles.tres", "res://dialog/styles/oil.tres"]
 layout/default_style="res://dialog/styles/test_styles.tres"
 variables={
+"NumClicks": 0,
+"NumOil": 0,
 "Var": 0
 }
 extensions_folder="res://addons/dialogic_additions"
