@@ -33,7 +33,7 @@ directories/dtl_directory={
 "test": "res://dialog/timelines/test.dtl"
 }
 glossary/default_case_sensitive=true
-layout/style_list=["res://dialog/styles/test_styles.tres"]
+layout/style_list=["res://dialog/styles/lh_style.tres", "res://dialog/styles/REAL_style.tres"]
 layout/default_style="res://dialog/styles/test_styles.tres"
 variables={
 "Var": 0
