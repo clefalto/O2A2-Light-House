@@ -1,0 +1,92 @@
+[gd_scene load_steps=7 format=3 uid="uid://ny4ltj0il2oo"]
+
+[ext_resource type="Script" uid="uid://bxjgp4g10m4us" path="res://scenes/minigames/wick_trimming/single_wickigame.gd" id="1_hg61t"]
+[ext_resource type="Script" uid="uid://4adaja8ghn3k" path="res://scenes/minigames/wick_trimming/falling_wick.gd" id="2_si3yd"]
+[ext_resource type="Texture2D" uid="uid://djhchohwyob4q" path="res://assets/textures/spr_temp_arrow.png" id="3_ky1x6"]
+[ext_resource type="Texture2D" uid="uid://dcneakt604s0p" path="res://assets/textures/slice.png" id="4_00gtw"]
+
+[sub_resource type="Gradient" id="Gradient_pageb"]
+colors = PackedColorArray(0, 0, 0, 1, 0.69, 0.69, 0.69, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_fgx4h"]
+gradient = SubResource("Gradient_pageb")
+width = 10
+fill_to = Vector2(0, 1)
+
+[node name="Minigame" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 231.0
+offset_top = 169.0
+offset_right = 271.0
+offset_bottom = 209.0
+script = ExtResource("1_hg61t")
+forgiveness = 10
+
+[node name="MainBar" type="ColorRect" parent="."]
+visible = false
+layout_mode = 0
+offset_left = 16.0
+offset_right = 21.0
+offset_bottom = 281.0
+
+[node name="ThePartThatFallsOff" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 16.0
+offset_right = -14.0
+offset_bottom = 24.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = SubResource("GradientTexture2D_fgx4h")
+script = ExtResource("2_si3yd")
+
+[node name="BottomPart" type="ColorRect" parent="."]
+layout_mode = 0
+offset_left = 16.0
+offset_right = 26.0
+offset_bottom = 40.0
+
+[node name="Arrow" type="TextureRect" parent="."]
+texture_filter = 1
+layout_mode = 0
+offset_left = 41.0
+offset_top = -27.075
+offset_right = 94.0
+offset_bottom = 26.925
+pivot_offset = Vector2(0, 28)
+texture = ExtResource("3_ky1x6")
+expand_mode = 1
+
+[node name="GoalPos" type="ColorRect" parent="."]
+layout_mode = 0
+offset_left = 4.0
+offset_top = 60.0
+offset_right = 38.0
+offset_bottom = 62.0
+
+[node name="GoalPos3" type="ColorRect" parent="GoalPos"]
+layout_mode = 0
+offset_left = 34.0
+offset_top = -4.0
+offset_right = 36.0
+offset_bottom = 6.0
+
+[node name="GoalPos2" type="ColorRect" parent="GoalPos"]
+layout_mode = 0
+offset_left = -2.0
+offset_top = -4.0
+offset_bottom = 6.0
+
+[node name="SliceTexture" type="TextureRect" parent="."]
+visible = false
+texture_filter = 1
+layout_mode = 0
+offset_left = -27.0
+offset_top = 8.0
+offset_right = 73.0
+offset_bottom = 108.0
+pivot_offset = Vector2(48, 52)
+texture = ExtResource("4_00gtw")
