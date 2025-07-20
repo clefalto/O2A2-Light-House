@@ -33,5 +33,6 @@ the_keeper: Though it does get quiet, despite the crashing of the waves, and the
 the_keeper: Mayhaps the solitude is a good thing after all? To get away for a bit.
 [voice path="res://assets/voicelines/silence.wav" volume="0.0"]
 [i]A slight smell of soot and smoke fills the air.[/i]
+[signal arg="screenBlack"]
 [voice path="res://assets/voicelines/chap1/Chap1-ln18.wav" volume="0.0"]
 the_keeper: I best be getting upstairs now.

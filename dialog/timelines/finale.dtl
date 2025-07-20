@@ -1,4 +1,6 @@
 [style name="REAL_style"]
+[signal arg="screenNorm"]
+[music path="res://assets/audio/ambientnoise_lighthousekeeper.mp3" fade="0.0" volume="0.0"]
 the_keeper: ...
 [voice path="res://assets/voicelines/chap4/Chap4-ln8.wav" volume="0.0"]
 [i]The world lights up around me.[/i]
@@ -24,4 +26,5 @@ the_keeper: Yet I am so tired, and cold.
 the_keeper: ...
 [voice path="res://assets/voicelines/chap4/Chap4-ln19.wav" volume="0.0"]
 the_keeper: Goodnight.
+[signal arg="screenNorm"]
 [voice path="res://assets/voicelines/silence.wav" volume="0.0"]

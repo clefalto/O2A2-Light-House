@@ -1,4 +1,5 @@
 [style name="REAL_style"]
+[signal arg="screenNorm"]
 [voice path="res://assets/voicelines/chap2/chap2-ln1.wav" volume="0.0"]
 the_keeper: There is no feeling quite as empty as waking up just in time to miss the setting sun.
 [voice path="res://assets/voicelines/chap2/chap2-ln2.wav" volume="0.0"]
@@ -15,12 +16,15 @@ the_keeper: But that can’t be right. Deliveries are usually in the…
 [i]I open the door, and the cold night gusts into my quarters.[/i]
 # vfx here?
 # the following line should perhaps be broken into multiple it's a little long?
+[signal arg="blackout"]
 [voice path="res://assets/voicelines/silence.wav" volume="0.0"]
 [i]I shield my eyes from the wind, and when I open them, there is not a soul to be seen. Was there anyone to begin with?[/i]
 [voice path="res://assets/voicelines/silence.wav" volume="0.0"]
 [i]I close the door.[/i]
+[signal arg="blackno"]
 [voice path="res://assets/voicelines/chap2/chap2-ln9.wav" volume="0.0"]
 the_keeper: The rare opportunity to be with thoughts other than mine own—gone. Who knows how long it will be until I see the provisioners again?
+[signal arg="blinking"]
 [voice path="res://assets/voicelines/chap2/chap2-ln10.wav" volume="0.0"]
 the_keeper: The last I saw them must have been…a couple of months past? I recall my soul lighting up like the beacon I’ve been tasked to care for.
 [voice path="res://assets/voicelines/chap2/chap2-ln11.wav" volume="0.0"]
@@ -33,6 +37,7 @@ the_keeper: I’ve had but minor errors so far. Clothing left hanging to dry dur
 the_keeper: A brief week of starvation led to my most recent indulgence - fishing.
 [voice path="res://assets/voicelines/chap2/chap2-ln15.wav" volume="0.0"]
 the_keeper: I daresay I’m quite good at it. Had I a comrade, I would’ve gladly shared my prey. Sadly, no such help has arrived.
+[signal arg="screenBlack"]
 [voice path="res://assets/voicelines/chap2/chap2-ln16.wav" volume="0.0"]
 the_keeper: But it matters not. Nothing good will come of fretting over that now.
 # me when i am mini and i game
