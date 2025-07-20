@@ -1,7 +1,6 @@
-[gd_resource type="Resource" script_class="DialogicStyle" load_steps=21 format=3 uid="uid://x1pbwae55dn5"]
+[gd_resource type="Resource" script_class="DialogicStyle" load_steps=20 format=3 uid="uid://x1pbwae55dn5"]
 
 [ext_resource type="Script" uid="uid://v524uwul1mp7" path="res://addons/dialogic/Resources/dialogic_style_layer.gd" id="1_ewcem"]
-[ext_resource type="PackedScene" uid="uid://cqpb3ie51rwl5" path="res://addons/dialogic/Modules/DefaultLayoutParts/Base_Default/default_layout_base.tscn" id="1_ohi1f"]
 [ext_resource type="PackedScene" uid="uid://c1k5m0w3r40xf" path="res://addons/dialogic/Modules/DefaultLayoutParts/Layer_FullBackground/full_background_layer.tscn" id="2_ohi1f"]
 [ext_resource type="PackedScene" uid="uid://cy1y14inwkplb" path="res://addons/dialogic/Modules/DefaultLayoutParts/Layer_VN_Portraits/vn_portrait_layer.tscn" id="3_wmin4"]
 [ext_resource type="PackedScene" uid="uid://cn674foxwedqu" path="res://addons/dialogic/Modules/DefaultLayoutParts/Layer_Input/full_advance_input_layer.tscn" id="4_dodea"]
@@ -14,12 +13,7 @@
 
 [sub_resource type="Resource" id="Resource_3vhku"]
 script = ExtResource("1_ewcem")
-scene = ExtResource("1_ohi1f")
-overrides = {
-"canvas_layer": "0.0",
-"follow_viewport": "true",
-"global_font_size": "100.0"
-}
+overrides = {}
 
 [sub_resource type="Resource" id="Resource_a3ijl"]
 script = ExtResource("1_ewcem")
@@ -34,9 +28,7 @@ overrides = {}
 [sub_resource type="Resource" id="Resource_mmgmm"]
 script = ExtResource("1_ewcem")
 scene = ExtResource("4_dodea")
-overrides = {
-"disabled": "true"
-}
+overrides = {}
 
 [sub_resource type="Resource" id="Resource_q5n6u"]
 script = ExtResource("1_ewcem")
@@ -63,9 +55,7 @@ overrides = {}
 [sub_resource type="Resource" id="Resource_b12un"]
 script = ExtResource("1_ewcem")
 scene = ExtResource("8_wj6rt")
-overrides = {
-"disabled": "true"
-}
+overrides = {}
 
 [sub_resource type="Resource" id="Resource_76ipo"]
 script = ExtResource("1_ewcem")
