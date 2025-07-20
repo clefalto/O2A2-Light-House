@@ -1,4 +1,5 @@
 [style name="REAL_style"]
+[signal arg="screenNorm"]
 [voice path="res://assets/voicelines/chap3/Chap3-ln1.wav" volume="0.0"]
 the_keeper: The weeks begin to pass by like vessels in the bay, each a distant blur on its way to the harbor.
 [voice path="res://assets/voicelines/chap3/Chap3-ln2.wav" volume="0.0"]
@@ -35,5 +36,6 @@ the_keeper: Not a soul there would recognize me if they saw me today.
 the_keeper: Still, I prefer the tribulations of a lightkeeper over the life they wanted of me.
 [voice path="res://assets/voicelines/silence.wav" volume="0.0"]
 the_keeper: ...
+[signal arg="screenBlack"]
 [voice path="res://assets/voicelines/chap3/Chap3-ln19.wav" volume="0.0"]
 the_keeper: I wonder if they miss me.

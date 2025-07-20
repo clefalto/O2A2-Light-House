@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://c7xyuqqwstc5h"]
+[gd_scene load_steps=5 format=3 uid="uid://c7xyuqqwstc5h"]
 
 [ext_resource type="Script" uid="uid://bcwx777g71mpo" path="res://scenes/main.gd" id="1_0wfyh"]
 [ext_resource type="PackedScene" uid="uid://cjmjhjs7cn15s" path="res://scenes/minigames/wick_trimming/wick_minigame.tscn" id="2_0wfyh"]
 [ext_resource type="PackedScene" uid="uid://c8lklo4e3r52y" path="res://scenes/blinking_light.tscn" id="3_sugp2"]
+[ext_resource type="PackedScene" uid="uid://b3kdqtvceck8l" path="res://scenes/screen_lights.tscn" id="4_jyhfs"]
 
 [node name="Main" type="Control"]
 layout_mode = 3
@@ -28,3 +29,5 @@ grow_vertical = 2
 
 [node name="blinkingLight" parent="." instance=ExtResource("3_sugp2")]
 position = Vector2(2, -1)
+
+[node name="screenLights" parent="." instance=ExtResource("4_jyhfs")]

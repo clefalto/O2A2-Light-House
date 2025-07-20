@@ -1,5 +1,6 @@
-[gd_scene load_steps=7 format=3 uid="uid://c8lklo4e3r52y"]
+[gd_scene load_steps=8 format=3 uid="uid://c8lklo4e3r52y"]
 
+[ext_resource type="Script" uid="uid://caagulfp8l61y" path="res://scenes/blinking_light.gd" id="1_0qsg1"]
 [ext_resource type="Texture2D" uid="uid://fj8h6qhtdysh" path="res://assets/light/2d_lights_and_shadows_neutral_point_light.webp" id="1_w07b1"]
 
 [sub_resource type="Animation" id="Animation_c4ibi"]
@@ -110,6 +111,7 @@ _data = {
 }
 
 [node name="blinkingLight" type="Node2D"]
+script = ExtResource("1_0qsg1")
 
 [node name="PointLight2D" type="PointLight2D" parent="."]
 position = Vector2(549, 322)
