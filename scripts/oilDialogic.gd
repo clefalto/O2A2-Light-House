@@ -1,6 +1,6 @@
 extends Control
 
-@export var night: int = 4
+@export var night: int = 1
 @export var howManyClicks: int = 10
 @export var currDialogue: bool = false
 
@@ -11,7 +11,7 @@ func _ready() -> void:
 	elif night == 2:
 		howManyClicks = 20
 	elif night == 3:
-		howManyClicks = 40
+		howManyClicks = 30
 	elif night == 4:
 		howManyClicks = 1000000000
 	if Dialogic.current_timeline != null:
@@ -28,5 +28,5 @@ func _on_button_pressed() -> void:
 		print(oilCount)
 		oilCount -= 1
 		Dialogic.VAR.set_variable("NumOil", oilCount)
-		$"../GPUParticles2D".amount_ratio += 0.01
+		$"../GPUParticles2D".amount_ratio += 0.02
 	pass # Replace with function body.
