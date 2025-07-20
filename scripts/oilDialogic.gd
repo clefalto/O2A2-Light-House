@@ -17,7 +17,7 @@ func _ready() -> void:
 	if Dialogic.current_timeline != null:
 		return
 	currDialogue = true
-	Dialogic.start('oil')
+	Dialogic.start('timelines/oil')
 	Dialogic.VAR.set_variable("NumOil", howManyClicks)
 	pass
 
