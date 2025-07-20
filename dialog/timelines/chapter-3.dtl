@@ -1,3 +1,4 @@
+[style name="REAL_style"]
 [voice path="res://assets/voicelines/chap3/Chap3-ln1.wav" volume="0.0"]
 the_keeper: The weeks begin to pass by like vessels in the bay, each a distant blur on its way to the harbor.
 [voice path="res://assets/voicelines/chap3/Chap3-ln2.wav" volume="0.0"]

@@ -1,3 +1,4 @@
+[style name="REAL_style"]
 [voice path="res://assets/voicelines/chap1/Chap1-ln1.wav" volume="0.0"]
 the_keeper: It's an odd feeling to wake up so close to sunset.
 [voice path="res://assets/voicelines/chap1/Chap1-ln2.wav" volume="0.0"]

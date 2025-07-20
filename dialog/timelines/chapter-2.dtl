@@ -1,3 +1,4 @@
+[style name="REAL_style"]
 [voice path="res://assets/voicelines/chap2/chap2-ln1.wav" volume="0.0"]
 the_keeper: There is no feeling quite as empty as waking up just in time to miss the setting sun.
 [voice path="res://assets/voicelines/chap2/chap2-ln2.wav" volume="0.0"]

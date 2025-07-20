@@ -1,3 +1,4 @@
+[style name="REAL_style"]
 [voice path="res://assets/voicelines/silence.wav" volume="0.0"]
 [i]I awaken to the sound of crickets, singing away to the dusk-filled sky.[/i]
 [voice path="res://assets/voicelines/chap4/Chap4-ln2.wav" volume="0.0"]
